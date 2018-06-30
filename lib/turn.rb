@@ -1,7 +1,7 @@
 def turn (board)
   puts "Please enter 1-9:"
-  input = gets.strip
-  input = input_to_index(input)
+  userinput = gets.strip
+  input = input_to_index(userinput)
   if valid_move?(board, input)
     move(board, input, "X")
     display_board(board)
